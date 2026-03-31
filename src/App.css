@@ -47,7 +47,11 @@
 
 .hero-section {
   background: linear-gradient(120deg, #fff9f2 0%, #f7f9fc 100%);
-  padding: 92px 0 80px;
+  /* padding: 92px 0 80px; */
+}
+
+.icon-color {
+  color: #7a2f2f;
 }
 
 .eyebrow {
@@ -55,7 +59,6 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.8rem;
 }
 
 h1 {
