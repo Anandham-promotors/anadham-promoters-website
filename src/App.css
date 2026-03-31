@@ -1,0 +1,299 @@
+.site {
+  color: #1c1c1c;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eaeaea;
+  z-index: 20;
+}
+
+.nav {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7a2f2f;
+}
+
+.nav nav {
+  display: flex;
+  gap: 22px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a.active {
+  color: #7a2f2f;
+}
+
+.hero-section {
+  background: linear-gradient(120deg, #fff9f2 0%, #f7f9fc 100%);
+  padding: 92px 0 80px;
+}
+
+.eyebrow {
+  color: #7a2f2f;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  margin: 14px 0;
+}
+
+.hero-copy {
+  font-size: 1.05rem;
+  color: #4f4f4f;
+  max-width: 780px;
+  margin-bottom: 26px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #7a2f2f;
+  color: white;
+  text-decoration: none;
+  padding: 0.82rem 1.15rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.trust-section {
+  padding: 48px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.trust-card {
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+}
+
+.trust-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-alt {
+  background: #faf7f5;
+}
+
+.section-kicker {
+  color: #7a2f2f;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: clamp(1.55rem, 3.4vw, 2.5rem);
+  margin: 0 0 18px;
+}
+
+.project-highlight {
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 26px;
+  background: #fff;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid #f0d6d6;
+  color: #7a2f2f;
+  background: #fff6f6;
+  border-radius: 99px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.project-highlight h3 {
+  margin: 0 0 8px;
+}
+
+.project-highlight p {
+  margin: 0;
+  color: #535353;
+}
+
+.about-copy {
+  max-width: 840px;
+  color: #4f4f4f;
+}
+
+.stats-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stats-grid div {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-grid strong {
+  font-size: 2rem;
+  color: #7a2f2f;
+}
+
+.stats-grid span {
+  color: #585858;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  margin: 0;
+  color: #4e4e4e;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-form {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+  min-height: 44px;
+  border-radius: 9px;
+  border: 1px solid #dadada;
+  padding: 0 12px;
+  font: inherit;
+}
+
+.contact-form button {
+  background: #7a2f2f;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 1px solid #ececec;
+  padding: 24px 0;
+  color: #5b5b5b;
+}
+
+.page-hero {
+  padding-bottom: 30px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.content-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.content-card h3 {
+  margin: 0 0 8px;
+}
+
+.content-card p {
+  margin: 0;
+  color: #4e4e4e;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  .trust-grid,
+  .stats-grid,
+  .project-list,
+  .services-grid,
+  .contact-wrapper,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding-top: 64px;
+  }
+}
