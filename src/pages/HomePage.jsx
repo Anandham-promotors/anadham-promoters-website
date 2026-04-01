@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import { projects, services, trustPoints } from '../data/siteData'
 import FeatureCard from '../components/FeatureCard';
+import PropertyCard from '../components/PropertyCard';
+import AboutCompanySection from '../components/AboutCompanySection';
 import promoVideo from '../assets/promo.mp4';
 import approvedIcon from '../assets/approve.avif';
 import clearDocument from '../assets/clear_document.avif';
@@ -9,12 +11,17 @@ import bankLoanIcon from '../assets/bank_approved.avif';
 import readyPlotIcon from '../assets/ready_plot.avif';
 import backedDataIcon from '../assets/backed_data.avif';
 import { FaArrowRight } from 'react-icons/fa';
+import plots1 from '../assets/plots-1.jpg';
+import plots2 from '../assets/plots-2.jpg';
+import plots3 from '../assets/plots-3.webp';
+import plots4 from '../assets/plots-4.jpeg';
+import priceCompare from '../assets/price_compare.avif';
 
 function HomePage() {
   return (
     <main>
-      <section className="hero-section py-12">
-        <div className="container flex flex-col gap-6">
+      <section className="hero-section pb-20">
+        <div className="flex flex-col gap-6">
 
           {/* 🎥 Video (Top) */}
           <div className="w-full">
@@ -23,7 +30,7 @@ function HomePage() {
               loop
               muted
               playsInline
-              className="w-full h-[300px] md:h-[450px] object-cover rounded-xl shadow-lg"
+              className="w-full h-[400px] md:h-[650px] object-cover shadow-lg"
             >
               <source src={promoVideo} type="video/mp4" />
             </video>
@@ -32,10 +39,10 @@ function HomePage() {
           {/* 🧾 Content (Below Video) */}
           <div className="w-full">
             <p className="text-4xl text-center text-gray-500 mt-8 mb-5">
-              25 Years of Building Coimbatore, Plot by Plot
+              25 Years of Building Chennai, Plot by Plot
             </p>
 
-            <p className="text-xl text-center mb-12">
+            <p className="text-xl text-center mb-32">
               Residential plots, lands & gated communities set for sale in the city&apos;s
               fastest-growing areas
             </p>
@@ -58,6 +65,56 @@ function HomePage() {
             </NavLink> */}
           </div>
 
+        </div>
+      </section>
+
+      <section className='pb-12'>
+        <div className='flex justify-between items-center section-3 py-24 px-16'>
+          <div>
+            <p className='font-bold text-base pb-5'>CHENNAI'S PROJECTS</p>
+            <p className='text-4xl'>Residential Plots, Lands & Villa</p>
+          </div>
+          <div className="flex items-center gap-2 cursor-pointer group">
+            <FaArrowRight className="icon-color text-xl transition-transform duration-300 group-hover:translate-x-1" />
+            <p className='text-black'>Ongoing project</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="px-16 flex gap-6">
+          
+          <PropertyCard
+            image={plots1}
+            location="Manimangalam, Chennai"
+            price="Plots for sale starting from Rs 13.5 Lakhs"
+          />
+
+          <PropertyCard
+            image={plots2}
+            location="Chengalpattu, Chennai"
+            price="Plots for sale starting from Rs 9 Lakhs"
+          />
+
+          <PropertyCard
+            image={plots3}
+            location="Mudichur, Chennai"
+            price="Plots for sale starting from Rs 7 Lakhs"
+          />
+
+          <PropertyCard
+            image={plots4}
+            location="Tambaram, Chennai"
+            price="Plots for sale starting from Rs 15 Lakhs"
+          />
+
+        </div>
+      </section>
+
+      <section>
+        <div className='px-16 py-28 flex'>
+        <AboutCompanySection />
+        <img src={priceCompare} />
         </div>
       </section>
 
