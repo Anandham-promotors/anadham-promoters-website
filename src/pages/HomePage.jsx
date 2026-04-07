@@ -38,7 +38,7 @@ function HomePage() {
 
           {/* 🧾 Content (Below Video) */}
           <div className="w-full">
-            <p className="text-4xl text-center text-gray-500 mt-8 mb-5">
+            <p className="text-4xl text-center text-[#D78C3D] mt-8 mb-5">
               25 Years of Building Chennai, Plot by Plot
             </p>
 
@@ -111,10 +111,21 @@ function HomePage() {
         </div>
       </section>
 
-      <section>
-        <div className='px-16 py-28 flex'>
+      {/* <section>
+        <div className='py-28 flex'>
         <AboutCompanySection />
-        <img src={priceCompare} />
+        <div className='px-14' >
+          <img src={priceCompare} />
+        </div>
+        </div>
+      </section> */}
+      <section>
+        <div className="py-28 flex flex-col lg:flex-row items-center">
+          <AboutCompanySection />
+
+          <div className="px-6 lg:px-14 mt-8 lg:mt-0 lg:w-1/2">
+            <img src={priceCompare} className="w-full h-auto object-cover" />
+          </div>
         </div>
       </section>
 
